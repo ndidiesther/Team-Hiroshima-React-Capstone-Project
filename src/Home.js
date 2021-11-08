@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css';
 import {Link } from "react-router-dom";
 import AppsIcon from "@material-ui/icons/Apps";
@@ -7,7 +7,9 @@ import logo from "./Side_hustle.png";
 import Search from "./Search"
 
 const Home = () => {
+    const[content, setContent] = useState('')
     return (
+        
         <div className="home">
             <div className = "home_header">
                 <div className = "home_headerLeft">
@@ -22,9 +24,9 @@ const Home = () => {
                 </div>
             </div>
             <div className = "home_body">
-                <img src={logo} alt="Logo"/>
+                {!content ? <img src={logo} alt="Logo"/>: content}
                 <div className="home_inputContainer">
-                    <Search />
+                    <Search setContent={setContent}/>
                 </div>
             </div>
         </div>
