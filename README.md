@@ -1,3 +1,12 @@
+# Team Hiroshima 
+
+Active Members:
+- Omobolaji Anuoluwapo Faruq
+- Chibogu Esther
+- Michael Odjidja
+- Collins Jacob
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -5,6 +5,7 @@ import AppsIcon from "@material-ui/icons/Apps";
 import { Avatar} from "@material-ui/core";
 import logo from "./Side_hustle.png";
 import Search from "./Search"
+import Footer from "./Footer"
 
 const Home = () => {
     const[content, setContent] = useState('')
@@ -28,6 +29,9 @@ const Home = () => {
                 <div className="home_inputContainer">
                     <Search setContent={setContent}/>
                 </div>
+            </div>
+            <div className="home_footer">
+                <Footer />
             </div>
         </div>
         
